@@ -21,8 +21,8 @@ RUN adduser -S discordbot -u 1001
 RUN chown -R discordbot:nodejs /app
 USER discordbot
 
-# Discord bots don't need to expose ports since they connect to Discord's API
-# EXPOSE 3000
+# Expose the port for health checks
+EXPOSE 3000
 
 # Define the command to run the Discord bot
-CMD ["node", "discordJect.js"]
+CMD ["node", "index.js"]

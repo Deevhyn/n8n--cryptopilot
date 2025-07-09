@@ -25,4 +25,4 @@ USER discordbot
 EXPOSE 3000
 
 # Define the command to run the Discord bot
-CMD ["node", "index.js"]
+CMD ["node", "discordJect.js"]
